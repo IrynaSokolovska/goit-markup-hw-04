@@ -28,7 +28,7 @@ body {
 
    
    width: 1158px;
-   max-width:1158px;
+   
 }
 /*                utils */
  .visually-hidden {
@@ -162,8 +162,14 @@ h1, h2, h3, h4, h5, h6, p{
    padding-top: 188px;
    padding-bottom: 188px;
    text-align: center;
-
-   background-color: var(--section-title-color);
+   
+   
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/office.jpg');
+   background-color:  var(--section-title-color);  
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: max-width:1440рх, height:600px,
+   cover;   
 }
 
 .hero-title {
@@ -214,7 +220,40 @@ h1, h2, h3, h4, h5, h6, p{
 .solutions-item {
    flex-basis: calc((100% - 72px) / 4);
 }
+/* .icon-solution-container { */
+   
 
+ .solutions-item::before{
+   display: block;
+   content: "";
+   
+   height: 112px;
+   background-color: var(--light-logo-color);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   outline: 1px solid red;
+/* delete */
+}
+
+.icon-antenna {
+   width: 64px;
+   height: 64px;
+
+}
+
+.icon-clock::before {
+   background-image: ;
+
+}
+.icon-diagram::before {
+   background-image: ;
+
+}
+.icon-astronaut::before {
+   background-image: ;
+
+}
 .section-title {
    color: var(--section-title-color);
    font-size: 36px;
@@ -302,7 +341,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .footer-text-wraper {
    width: 264px;
-   height: 72px;
+   
 }
 
 .footer .logo {
@@ -398,18 +437,8 @@ h1, h2, h3, h4, h5, h6, p{
    border-top: 0;
 }
 
-.foto-item{
-   /* margin-right: 24px; */
-   /* margin-bottom: 48px; */
-   }
-
-/* .foto-item:nth-child(3n) { */
-  /* margin-right: 0; */
-}
-
-/* .foto-item:nth-last-child(3n) { */
-/* margin-bottom: 0; */
-}
+.foto-item{}
+   
 
 .section-subtitle {}
 
